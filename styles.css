@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #1F2937;
+  --secondary-color: #E5E7EB;
+  --text-light-primary: #F9FAF8;
+  --text-light-secondary: #E5E7EB;
+  --text-dark-primary: #1F2937;
+  --button-color: #3882F6;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px
+}
+
+h1 {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 150px;
+  background-color: var(--primary-color);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-light-primary);
+}
+
+.header-links {
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: auto;
+  color: var(--text-light-secondary);
+}
+
+.hero {
+  display: flex;
+  padding: 0 150px;
+  gap: 50px;
+  background-color: var(--primary-color);
+}
+
+.hero-content {
+  margin: 0;
+  color: var(--text-light-primary);
+  padding: 100px 0;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero-content p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--text-light-secondary);
+}
+
+.hero-content .signup {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  width: 110px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: var(--button-color);
+  color: var(--text-light-primary);
+}
+
+.hero-image {
+  width: 900px;
+  height: 250px;
+  margin: auto;
+}
+.hero-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
