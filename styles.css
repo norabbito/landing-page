@@ -11,7 +11,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -83,6 +85,8 @@ h1 {
   appearance: none;
   border: 0;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
   width: 110px;
   height: 35px;
   border-radius: 8px;
@@ -95,8 +99,35 @@ h1 {
   height: 250px;
   margin: auto;
 }
+
 .hero-image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-container {
+  background-color: var(--secondary-color);
+  padding: 100px 200px;
+}
+
+.quote-container p {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 100;
+  font-style: italic;
+  color: var(--text-dark-primary);
+}
+
+.quote-container p:nth-of-type(2) {
+  padding-right: 70px;
+  text-align: right;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 600;
 }
